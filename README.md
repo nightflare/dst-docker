@@ -15,7 +15,7 @@ yum -y install libffi-devel
 2. 下载python3安装包
 
 ~~~bash
-wget https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz
+wget https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz
 ~~~
 
 3. 新建python3目录
@@ -27,8 +27,8 @@ mkdir /usr/local/python3
 4. 安装python3并创建软连接
 
 ~~~bash
-tar -xvJf  Python-3.8.5.tar.xz
-cd Python-3.8.5
+tar -xvJf  Python-3.9.2.tar.xz
+cd Python-3.9.2
 ./configure --prefix=/usr/local/python3
 make && make install
 ln -s /usr/local/python3/bin/python3 /usr/bin/python3
@@ -66,13 +66,13 @@ docker-compose --version
 1. Clone项目
 
 ~~~bash
-git clone --depth=1 https://github.com/wdw87/dst-detected-server-docker.git
+git clone --depth=1 https://github.com/nightflare/dst-docker.git
 ~~~
 
 2. 进入目录
 
 ~~~bash
-cd dst-detected-server-docker/
+cd dst-docker/
 ~~~
 
 3. 根据注释修改配置文件info.ini和mods.ini
